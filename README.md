@@ -31,6 +31,27 @@ Run the Augmented Reality-App:
 ```bash
 python readingFormLib.py
 ```
+We need to understand that the current class has some basic limitations. We need to define the areas in terms of pixel position, which we need to extract.
+
+We need to fill-up the zone in the following way -
+
+```
+'MY_DICT': {
+          "atrib_1": {"id": "FileNo", "bbox": (425, 60, 92, 34), "filter_keywords": tuple(["FILE", "DEPT"])},
+          "atrib_2": {"id": "DeptNo", "bbox": (545, 60, 87, 40), "filter_keywords": tuple(["DEPT", "CLOCK"])},
+          "atrib_3": {"id": "ClockNo", "bbox": (673, 60, 75, 36), "filter_keywords": tuple(["CLOCK","VCHR.","NO."])},
+          "atrib_4": {"id": "VCHRNo", "bbox": (785, 60, 136, 40), "filter_keywords": tuple(["VCHR.","NO."])},
+          "atrib_5": {"id": "DigitNo", "bbox": (949, 60, 50, 38), "filter_keywords": tuple(["VCHR.","NO.", "056"])},
+          "atrib_6": {"id": "CompanyName", "bbox": (326, 140, 621, 187), "filter_keywords": tuple(["COMPANY","FILE"])},
+          "atrib_7": {"id": "StartDate", "bbox": (1264, 143, 539, 44), "filter_keywords": tuple(["Period", "Beginning:"])},
+          "atrib_8": {"id": "EndDate", "bbox": (1264, 193, 539, 44), "filter_keywords": tuple(["Period", "Ending:"])},
+          "atrib_9": {"id": "PayDate", "bbox": (1264, 233, 539, 44), "filter_keywords": tuple(["Pay", "Date:"])},
+    }
+```
+
+To understand, how we've captured where to extract the texts are shown below -
+
+![GettingHW.GIF](GettingHW.GIF)
 
 Make sure that you are properly connected with a functional WebCam or scanned images (Preferably a separate external WebCAM).
 
