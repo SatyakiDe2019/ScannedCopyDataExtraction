@@ -62,4 +62,5 @@ Make sure that you are properly connected with a functional WebCam or scanned im
 ## Resources
 
 - To learn more about Open-CV, check out our [documentation](https://opencv.org/opencv-free-course/).
+- To learn more about ReadingFilledForm package, check out our [documentation](https://pypi.org/project/ReadingFilledForm/0.0.7/#description).
 - To view the complete demo with sound, check out our [YouTube Page](https://youtu.be/5h53TB7RUMs).
